@@ -163,8 +163,16 @@
             }
             .newsitem a {
                 color: #1F4F82;
-                text-decoration: none;
+
             }
+            a {
+                text-decoration: none;
+            }  
+
+            a:hover {
+                text-decoration: underline;
+            }
+
             .newsitem a:hover {
                 text-decoration: underline;
             }
@@ -181,10 +189,9 @@
             #watch{
                 background-color: #EEEEEE;
                 float: right;
-                width: 380px;
+                width: 374px;
                 position: relative;
                 top: -80px;
-                padding-left: 10px
 
             }
             h2{
@@ -196,10 +203,84 @@
                 position: relative;
                 float: left;
                 top: -30px;
-                padding-left:3px;
+                padding-right:3px;
                 right: -315px;
                 color: #d06000;
             }
+
+            #push {
+                float: right;
+                margin: 23px 10px 0 0;
+            }
+
+
+
+            #leftarrow{
+                float: left;
+                clear: both;
+                border-right: 1px solid white;
+                height: 141px;
+            }
+            #pic1 {
+                width: 157px;
+            }            
+
+            #pic2 {
+                width: 158px;
+            }
+            .wlblock {
+                float: left;
+                background-color: #d1700e;
+                width: 158px;
+                border-right: 1px solid white;
+
+            }
+            .wlblock  a {
+                color: white;
+
+            }
+
+            .wlblock p {
+                margin: 10px;
+            }
+            #rightarrow {
+                float: left;
+                height: 141px;
+            }
+
+            #watch ul {
+
+            }
+
+            #watch li {
+                list-style: none;
+
+
+            }
+
+
+            .live {
+                background-color: #fc0000;
+                color: white;
+                width: 30px;
+                text-align: center;
+                clear: both;
+                float: left;
+                margin-top: -1px;
+                margin-right: 5px;
+                margin-left: -30px
+
+            }
+            .liveall {
+                margin-top: 21px;
+                margin-bottom: -10px;
+                font-weight: bold;
+            }
+            
+            #livelink {
+                margin-top: 160px;
+            }
+
 
 
 
@@ -211,27 +292,25 @@
     <body>
         <div id="container">
             <div id="topbar">
-                <div id="trantop">
-                    <div class="fixedwidth">
-                        <div id="logodiv">
-                            <img src="/img/bbc.png" alt="bbc">
-                        </div>
-                        <div id="signin">
-                            <img src="http://dummyimage.com/20x20/4d494d/686a82.gif"> Sign In
-                        </div>
-                        <div id="topmenu">
-                            <ul>
-                                <li>News</li>
-                                <li>Sports</li> 
-                                <li>Weather</li> 
-                                <li>IPlayer</li> 
-                                <li>Radio</li>
-                                <li>More...</li> 
-                            </ul>
-                        </div>
-                        <div id="search">
-                            <input type="text" placeholder="Search" />                            
-                        </div>
+                <div class="fixedwidth">
+                    <div id="logodiv">
+                        <img src="img/bbc.png" alt="bbc">
+                    </div>
+                    <div id="signin">
+                        <img src="http://dummyimage.com/20x20/4d494d/686a82.gif"> Sign In
+                    </div>
+                    <div id="topmenu">
+                        <ul>
+                            <li>News</li>
+                            <li>Sports</li> 
+                            <li>Weather</li> 
+                            <li>IPlayer</li> 
+                            <li>Radio</li>
+                            <li>More...</li> 
+                        </ul>
+                    </div>
+                    <div id="search">
+                        <input type="text" placeholder="Search" />                            
                     </div>
                 </div>
             </div>
@@ -270,7 +349,7 @@
                 <div class="fixedwidth">
                     <p><span style="font-weight:bold">2 April 2014</span> Last updated at 15:23</p>
                     <h1>US prison worker 'aided escapees'</h1>
-                    <img  class="headlineimg" style="width:390px" src="/img/headerimg.jpg">
+                    <img  class="headlineimg" style="width:390px" src="img/headerimg.jpg">
                     <div class="newsitem">
                         <p>A female prison worker smuggled tools to two New York inmates before they escaped, according to prosecutors.</p>
 
@@ -289,13 +368,49 @@
 
                     </div>
                     <div id="watch">
-
-
+                        <p id="push">
+                            <img  src="http://dummyimage.com/12x12/d06000/d06000.gif">
+                            <img src="http://dummyimage.com/12x12/4d494d/686a82.gif">
+                            <img  src="http://dummyimage.com/12x12/4d494d/686a82.gif">
+                            <img src="http://dummyimage.com/12x12/4d494d/686a82.gif">
+                        </p>
                         <h2>Watch/Listen</h2>
-                        <img class="watchtab" src="http://dummyimage.com/12x12/d06000/d06000.gif">
-                        <img class="watchtab" src="http://dummyimage.com/12x12/4d494d/686a82.gif">
-                        <img class="watchtab" src="http://dummyimage.com/12x12/4d494d/686a82.gif">
-                        <img class="watchtab" src="http://dummyimage.com/12x12/4d494d/686a82.gif">
+
+
+                        <img id="leftarrow" src="img/left_arrow.PNG">
+                        <div class="wlblock">
+                            <img id="pic1" src="img/pic1.PNG">
+                            <p><a href="#">Titanic letter could fetch $100,000</a></p>
+                        </div>                        
+                        <div class="wlblock">
+                            <img id="pic2" src="img/pic2.PNG">
+                            <p><a href="#">The housing estate delivering its own mall</a></p>
+                        </div>
+                        <img id="rightarrow" src="img/right_arrow.PNG">
+                        <ul id="livelink">
+                            <li class="liveall">
+                                <a href="#">BBC News Channel</a>
+                                <p class="live">Live</p>
+
+                            </li>
+                             <li class="liveall">
+                                <a href="#">Radio 5 Live</a>
+                                <p class="live">Live</p>
+
+                            </li>
+                             <li class="liveall">
+                                <a href="#">Osborne Questioned on Budget</a>
+                                <p class="live">Live</p>
+
+                            </li>
+
+
+
+                            <!--
+<li><a href="#">Radio 5 Live</a></li>
+<li><a href="#">Osborne Questioned on Budget</a></li>-->
+                        </ul>
+                        
                     </div>
                 </div>
             </div>
